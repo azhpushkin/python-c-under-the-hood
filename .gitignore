@@ -52,3 +52,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+
+__pycache__
+*.pyc
+ctypes/libdullmath.so
+libffi/libdullmath.so

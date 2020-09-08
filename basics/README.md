@@ -23,8 +23,8 @@ This one is easier, but you need sudo permissions for it.
 In this way, you don't to do anything to make library work:
 ```bash
 $ gcc -c main.c -o main.o
-$ gcc main.o -ldullmath -o main
-$ ./main
+$ gcc main.o -ldullmath -o main.out
+$ ./main.out
   10th fibonacci number is 55
 ```
 
@@ -40,16 +40,16 @@ $ gcc -c main.c -o main.o
 $
 $ # set -L flag to current path (.)
 $ # compiler will add given directory to lookup list
-$ gcc main.o -L. -ldullmath -o main
+$ gcc main.o -L. -ldullmath -o main.out
 $
 $ # LD_LIBRARY_PATH is required for OS to find library at runtime
 $ # as compilation does not fix location of the library
 $ export LD_LIBRARY_PATH=$(pwd)  
-$ ./main
+$ ./main.out
   10th fibonacci number is 55
 $ 
 $ # Or also:
-$ LD_LIBRARY_PATH=$(pwd) ./main
+$ LD_LIBRARY_PATH=$(pwd) ./main.out
   10th fibonacci number is 55
 ```
 
