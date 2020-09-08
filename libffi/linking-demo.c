@@ -1,4 +1,3 @@
-// main.c
 #include <dlfcn.h>  // header for libdl
 #include <stdio.h>
 
