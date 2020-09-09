@@ -35,7 +35,7 @@ except AttributeError:
 #     func = self.__getitem__(name)
 #   File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
 #     func = self._FuncPtr((name_or_ordinal, self))
-# AttributeError: /home/.../libsimple.so: undefined symbol: other_function
+# AttributeError: /home/.../libdullmath.so: undefined symbol: other_function
 
 print_colored(GREEN, '\n## RUNNING FUNCTIONS:')
 print(">>> [lib.fibonacci(i) for i in range(7)]")

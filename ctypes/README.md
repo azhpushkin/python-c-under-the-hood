@@ -21,7 +21,7 @@ Traceback (most recent call last):
     func = self.__getitem__(name)
   File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
     func = self._FuncPtr((name_or_ordinal, self))
-AttributeError: /home/.../libsimple.so: undefined symbol: other_function
+AttributeError: /home/.../libdullmath.so: undefined symbol: other_function
 
 >>> [lib.fibonacci(i) for i in range(7)]
 [0, 1, 1, 2, 3, 5, 8]
@@ -55,7 +55,7 @@ Traceback (most recent call last):
     func = self.__getitem__(name)
   File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
     func = self._FuncPtr((name_or_ordinal, self))
-AttributeError: /home/.../libsimple.so: undefined symbol: fibonacci
+AttributeError: /home/.../libdullmath.so: undefined symbol: fibonacci
 ```
 
 In order to fix in, `extern "C"` needs to be declared.

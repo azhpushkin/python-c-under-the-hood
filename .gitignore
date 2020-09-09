@@ -57,6 +57,6 @@ dkms.conf
 __pycache__
 *.pyc
 ctypes/libdullmath.so
-libffi/libdullmath.so
+ffi/libdullmath.so
 defining-api/libdullmath.so
 extensions/cython_demo.c

@@ -31,8 +31,8 @@ $ ./main.out
 ### 2. Set compiler and environment flags
 
 If you don't have sudo permissions or don't want to clutter up
-system-wide directories, you can use compiler flags and `LD_LIBRARY_PATH` 
-environment variable to define path to the library.
+system-wide directories, you can use `LIBRARY_PATH` and `LD_LIBRARY_PATH` 
+environment variables to define path to the library.
 
 
 ```bash
@@ -42,8 +42,9 @@ $ # set -L flag to current path (.)
 $ # compiler will add given directory to lookup list
 $ gcc main.o -L. -ldullmath -o main.out
 $
-$ # LD_LIBRARY_PATH is required for OS to find library at runtime
-$ # as compilation does not fix location of the library
+$ # LIBRARY_PATH is used to find libraries during compilation
+$ # LD_LIBRARY_PATH is used to find libraries at runtime
+$ export LIBRARY_PATH=$(pwd)  
 $ export LD_LIBRARY_PATH=$(pwd)  
 $ ./main.out
   10th fibonacci number is 55
